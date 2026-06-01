@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" fill="none" role="img" aria-label="Happy cartoon rescue dog">
+  <defs>
+    <clipPath id="circle"><circle cx="240" cy="240" r="220"/></clipPath>
+  </defs>
+  <!-- soft halo -->
+  <circle cx="240" cy="240" r="220" fill="rgba(255,255,255,0.14)"/>
+  <circle cx="240" cy="240" r="184" fill="rgba(255,255,255,0.18)"/>
+
+  <g clip-path="url(#circle)">
+    <!-- ground shadow -->
+    <ellipse cx="240" cy="412" rx="150" ry="26" fill="rgba(0,0,0,0.16)"/>
+
+    <!-- tail -->
+    <path d="M138 300 C92 282 78 232 104 214 C120 246 150 262 168 276 Z" fill="#C97B43"/>
+
+    <!-- back leg -->
+    <ellipse cx="186" cy="372" rx="34" ry="26" fill="#E8A86A"/>
+    <ellipse cx="316" cy="376" rx="36" ry="24" fill="#E8A86A"/>
+
+    <!-- body -->
+    <path d="M168 250 C168 200 210 168 256 170 C312 172 348 214 344 286 C342 350 300 388 250 388 C196 388 168 340 168 290 Z" fill="#F0B173"/>
+    <!-- chest fluff -->
+    <path d="M236 250 C228 296 236 340 256 372 C284 340 290 296 280 252 C268 240 248 240 236 250 Z" fill="#FBE3C4"/>
+
+    <!-- front legs -->
+    <rect x="226" y="330" width="30" height="68" rx="15" fill="#F0B173"/>
+    <rect x="276" y="332" width="30" height="66" rx="15" fill="#E8A86A"/>
+    <ellipse cx="241" cy="402" rx="20" ry="13" fill="#FBE3C4"/>
+    <ellipse cx="291" cy="402" rx="20" ry="13" fill="#FBE3C4"/>
+
+    <!-- head -->
+    <g>
+      <!-- ears -->
+      <path d="M176 132 C150 118 132 150 142 196 C160 224 188 214 196 182 Z" fill="#C97B43"/>
+      <path d="M330 130 C358 116 378 150 366 198 C346 226 318 214 312 180 Z" fill="#C97B43"/>
+      <!-- face -->
+      <ellipse cx="254" cy="186" rx="92" ry="84" fill="#F0B173"/>
+      <!-- muzzle -->
+      <ellipse cx="254" cy="222" rx="58" ry="46" fill="#FBE3C4"/>
+      <!-- eye patches -->
+      <ellipse cx="216" cy="170" rx="30" ry="34" fill="#E29A52"/>
+      <ellipse cx="292" cy="170" rx="30" ry="34" fill="#E29A52"/>
+      <!-- eyes -->
+      <circle cx="220" cy="176" r="14" fill="#3A2E25"/>
+      <circle cx="288" cy="176" r="14" fill="#3A2E25"/>
+      <circle cx="225" cy="171" r="5" fill="#fff"/>
+      <circle cx="293" cy="171" r="5" fill="#fff"/>
+      <!-- nose -->
+      <ellipse cx="254" cy="210" rx="20" ry="15" fill="#3A2E25"/>
+      <ellipse cx="248" cy="205" rx="6" ry="4" fill="#6b5848"/>
+      <!-- smile + tongue -->
+      <path d="M254 224 C254 244 234 256 220 250" stroke="#3A2E25" stroke-width="5" stroke-linecap="round"/>
+      <path d="M254 224 C254 244 274 256 288 250" stroke="#3A2E25" stroke-width="5" stroke-linecap="round"/>
+      <path d="M248 240 C246 262 262 268 270 256 C272 246 266 238 256 238 Z" fill="#F07A8C"/>
+    </g>
+
+    <!-- heart tag -->
+    <path d="M254 300 c-6 -10 -22 -8 -22 4 c0 10 14 18 22 24 c8 -6 22 -14 22 -24 c0 -12 -16 -14 -22 -4 Z" fill="#F25C54"/>
+  </g>
+
+  <!-- floating paw prints -->
+  <g fill="rgba(255,255,255,0.5)">
+    <g transform="translate(60 110) scale(0.8)">
+      <circle cx="0" cy="0" r="9"/><circle cx="20" cy="-6" r="7"/><circle cx="40" cy="0" r="7"/><circle cx="58" cy="10" r="6"/>
+      <ellipse cx="28" cy="26" rx="22" ry="18"/>
+    </g>
+    <g transform="translate(380 360) scale(0.6)">
+      <circle cx="0" cy="0" r="9"/><circle cx="20" cy="-6" r="7"/><circle cx="40" cy="0" r="7"/><circle cx="58" cy="10" r="6"/>
+      <ellipse cx="28" cy="26" rx="22" ry="18"/>
+    </g>
+  </g>
+</svg>
