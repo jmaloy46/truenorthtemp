@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="warm">
+<!--
+  True North Rescue Mission — FOSTER PAGE
+  ---------------------------------------
+  Head, header/footer mounts, and script block copied verbatim from
+  index.html (the canonical reference). Only <title>, <meta description>,
+  data-page, and <main> contents differ. See CONTRACT.md.
+  No build step — plain HTML/CSS/JS for GitHub Pages.
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foster a Dog — True North Rescue Mission</title>
+  <meta name="description" content="Fostering is the heart of True North Rescue Mission. With no physical shelter, every dog we save depends on a foster home. Learn what we provide, what fostering involves, and apply to foster today.">
+
+  <!-- favicon: emoji via SVG data URI -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+
+  <!-- Google Fonts (per-theme stacks) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- theme.js loads first (in <head>) to set [data-theme] before paint, avoiding a flash -->
+  <script src="assets/js/theme.js"></script>
+</head>
+
+<body data-page="foster">
+  <!-- shared chrome injected by components.js -->
+  <header id="site-header"></header>
+
+  <main id="main">
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Open your home, save a life</p>
+        <h1>Foster a Dog</h1>
+        <p>Fostering is the heart of what we do. Because we have no physical shelter, every dog we save depends on a foster family willing to give them a safe, loving place to land.</p>
+      </div>
+    </section>
+
+    <!-- ===================== WHY FOSTERING MATTERS ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div class="split__media" data-reveal="left">
+            <img src="assets/img/dog-2.webp" alt="A rescued dog relaxing in a cozy foster home">
+          </div>
+          <div data-reveal="right">
+            <p class="eyebrow">No foster, no rescue</p>
+            <h2>Why fostering matters</h2>
+            <p class="lead" style="margin-block:1rem">True North Rescue Mission is 100% foster-based. We have no kennels and no shelter building — which means a dog can only be saved if a foster home is ready to receive them.</p>
+            <p>Every foster opens a spot that lets us pull one more dog from a high-risk situation. Fostering keeps dogs out of shelters and in warm homes, helps them decompress and learn to trust, and gives us the insight we need to match each dog with the right adopter. Whether for a weekend or until adoption, you make the next rescue possible.</p>
+            <div class="band__cta" style="margin-top:1.25rem">
+              <button class="btn btn--primary" data-open-modal="foster">Apply to Foster</button>
+              <a class="btn btn--ghost" href="#what-we-provide">What we provide</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== IMPACT STATS BAND ===================== -->
+    <section class="band stats">
+      <div class="container">
+        <div class="stats__grid">
+          <div data-reveal>
+            <div class="stat__num"><span data-count="2000" data-suffix="+">0</span></div>
+            <div class="stat__label">Dogs Saved by Fosters</div>
+          </div>
+          <div data-reveal>
+            <div class="stat__num"><span data-count="120" data-suffix="+">0</span></div>
+            <div class="stat__label">Active Foster Homes</div>
+          </div>
+          <div data-reveal>
+            <div class="stat__num"><span data-count="100" data-suffix="%">0</span></div>
+            <div class="stat__label">Foster-Based, No Shelter</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WHAT TNR PROVIDES ===================== -->
+    <section class="section section--alt" id="what-we-provide">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">You're never alone</p>
+          <h2>What True North provides</h2>
+          <p>Fostering should never cost you out of pocket. We cover the essentials so you can focus on giving your foster dog love and stability.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card card--lift" data-reveal>
+            <div class="card__body">
+              <div class="give__icon" aria-hidden="true">🩺</div>
+              <h3 class="card__title">Full Vetting &amp; Medical Care</h3>
+              <p class="card__text">All veterinary care is covered by the rescue — vaccines, spay/neuter, microchipping, and any treatment your foster dog needs.</p>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body">
+              <div class="give__icon" aria-hidden="true">🦴</div>
+              <h3 class="card__title">Supplies When Needed</h3>
+              <p class="card__text">We help with food, a crate, and other essentials so the cost of fostering never falls on you.</p>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body">
+              <div class="give__icon" aria-hidden="true">🤝</div>
+              <h3 class="card__title">A Support Network</h3>
+              <p class="card__text">Our volunteer team and fellow fosters are on call for guidance, training tips, and troubleshooting along the way.</p>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body">
+              <div class="give__icon" aria-hidden="true">📣</div>
+              <h3 class="card__title">Adoption Marketing</h3>
+              <p class="card__text">We handle applications, screening, and promoting your foster dog so you can simply share their personality.</p>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body">
+              <div class="give__icon" aria-hidden="true">🚗</div>
+              <h3 class="card__title">Transport Coordination</h3>
+              <p class="card__text">We arrange transport to vet visits, meet-and-greets, and the dog's eventual forever home.</p>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body">
+              <div class="give__icon" aria-hidden="true">💛</div>
+              <h3 class="card__title">Flexibility</h3>
+              <p class="card__text">Foster for a weekend, a few weeks, or until adoption. We work with your schedule and your comfort level.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WHAT FOSTERING INVOLVES ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">From application to adoption</p>
+          <h2>What fostering involves</h2>
+          <p>You provide the home and the heart; we provide the rest. Here's how fostering with True North works, step by step.</p>
+        </div>
+        <div class="grid grid--4">
+          <article class="card step" data-reveal>
+            <div class="card__body">
+              <div class="step__num">1</div>
+              <h3 class="card__title">Apply &amp; Match</h3>
+              <p class="card__text">Tell us about your home and what kind of foster you're equipped for. We match you with a dog that fits your space and lifestyle.</p>
+            </div>
+          </article>
+          <article class="card step" data-reveal>
+            <div class="card__body">
+              <div class="step__num">2</div>
+              <h3 class="card__title">Welcome Them In</h3>
+              <p class="card__text">Give your foster dog time to decompress and settle. Provide food, shelter, exercise, and plenty of patience and love.</p>
+            </div>
+          </article>
+          <article class="card step" data-reveal>
+            <div class="card__body">
+              <div class="step__num">3</div>
+              <h3 class="card__title">Share Their Story</h3>
+              <p class="card__text">Snap photos, note their quirks and progress, and help us show adopters who this dog truly is.</p>
+            </div>
+          </article>
+          <article class="card step" data-reveal>
+            <div class="card__body">
+              <div class="step__num">4</div>
+              <h3 class="card__title">Send Them Home</h3>
+              <p class="card__text">When the right adopter is found, you've helped a dog complete their journey — and you can foster the next one.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOSTER REQUIREMENTS ===================== -->
+    <section class="section section--alt" id="requirements">
+      <div class="container">
+        <div class="split">
+          <div data-reveal="left">
+            <p class="eyebrow">Is fostering right for you?</p>
+            <h2>Foster requirements</h2>
+            <p class="lead" style="margin-block:1rem">There's no perfect home, just a willing one. A few things we ask of every foster:</p>
+            <ul class="stack" style="padding-left:1.1rem">
+              <li>Be at least 21 years old and able to provide a safe, stable environment.</li>
+              <li>Have approval from your landlord if you rent, and agreement from everyone in your household.</li>
+              <li>Provide a daily care plan — puppies and dogs in recovery shouldn't be left alone for long stretches.</li>
+              <li>Be willing to transport (or coordinate transport) to vet visits and adoption meet-and-greets.</li>
+              <li>Keep your foster dog up to date on the care plan we provide and communicate openly with our team.</li>
+              <li>Introduce resident pets slowly and safely, and let us know how the household adjusts.</li>
+              <li>Sign and follow the True North Foster Agreement before bringing a dog home.</li>
+            </ul>
+          </div>
+          <div class="split__media" data-reveal="right">
+            <img src="assets/img/dog-6.webp" alt="A foster volunteer sitting with a happy rescue dog">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOSTER AGREEMENT ===================== -->
+    <section class="section" id="foster-agreement">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Before you bring a dog home</p>
+          <h2>The Foster Agreement</h2>
+          <p>Every foster signs our Foster Agreement first. It spells out what True North covers, how medical decisions are made, and what we ask of you while a dog is in your care — so everyone, especially the dog, is protected.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3 class="card__title">Our commitment</h3>
+              <p class="card__text">The rescue retains ownership and covers all approved veterinary care, vaccines, and spay/neuter for your foster dog.</p>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3 class="card__title">Your commitment</h3>
+              <p class="card__text">Provide a safe home, follow the care plan, use only rescue-approved vets, and never rehome or transfer the dog on your own.</p>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3 class="card__title">Health &amp; safety</h3>
+              <p class="card__text">Report illness or behavioral concerns promptly, and contact us before any non-emergency medical decisions.</p>
+            </div>
+          </article>
+        </div>
+        <div class="text-center" style="margin-top:2rem" data-reveal>
+          <a class="btn btn--ghost" href="foster.html#foster-agreement">Read the full Foster Agreement</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== APPLY CTA BAND ===================== -->
+    <section class="band band--accent">
+      <div class="container">
+        <div class="band__inner">
+          <p class="eyebrow" style="color:inherit;opacity:.85">The next rescue starts with you</p>
+          <h2>Ready to open your home?</h2>
+          <p style="margin-top:.75rem;max-width:52ch;margin-inline:auto">Saving one dog won't change the world — but for that one dog, the world will change forever. Apply to foster and make room for the next save.</p>
+          <div class="band__cta">
+            <button class="btn btn--primary" data-open-modal="foster">🐾 Apply to Foster</button>
+            <a class="btn btn--ghost" href="mailto:Fosters.TrueNorthRescue@gmail.com" style="color:inherit;border-color:currentColor">Email our foster team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- shared chrome injected by components.js -->
+  <footer id="site-footer"></footer>
+
+  <!-- ===================== SCRIPTS (order matters) =====================
+       1. components.js  — header/nav/footer/theme-pill + calls TNRForms.mount()
+       2. forms.js       — modal engine (mounted by components.js)
+       3. pets.js        — adoptable dogs grid
+       4. reveal.js      — scroll-reveal + counters
+       theme.js is already loaded in <head>.
+  -->
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/pets.js"></script>
+  <script src="assets/js/reveal.js"></script>
+</body>
+</html>

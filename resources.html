@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="warm">
+<!--
+  True North Rescue Mission — RESOURCES PAGE
+  ------------------------------------------------------------
+  Head, header/footer mounts, and the script block are copied
+  verbatim from index.html (the canonical reference). Only the
+  <title>, <meta description>, data-page, and <main> change.
+  See CONTRACT.md.
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources for Adopters &amp; Fosters — True North Rescue Mission</title>
+  <meta name="description" content="Helpful resources for True North Rescue adopters and fosters: new-dog tips, the decompression rule, a home-prep checklist, training and vet-care guidance, plus a foster &amp; adoption FAQ.">
+
+  <!-- favicon: emoji via SVG data URI -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+
+  <!-- Google Fonts (per-theme stacks) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- theme.js loads first (in <head>) to set [data-theme] before paint, avoiding a flash -->
+  <script src="assets/js/theme.js"></script>
+
+  <!-- Page-scoped tweaks: FAQ accordion + checklist, built only from existing tokens -->
+  <style>
+    /* FAQ accordion (native <details>) */
+    .faq { max-width: var(--content); margin-inline: auto; }
+    .faq__item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      margin-top: var(--space-4);
+      overflow: hidden;
+    }
+    .faq__item + .faq__item { margin-top: var(--space-4); }
+    .faq__q {
+      list-style: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: space-between; gap: var(--space-4);
+      padding: var(--space-5);
+      font-family: var(--font-head); font-weight: var(--head-weight);
+      font-size: var(--fs-lg); color: var(--text);
+    }
+    .faq__q::-webkit-details-marker { display: none; }
+    .faq__q::after {
+      content: "+"; flex: none;
+      font-family: var(--font-head); font-weight: 700; font-size: var(--fs-xl);
+      line-height: 1; color: var(--primary);
+      transition: transform var(--transition);
+    }
+    .faq__item[open] .faq__q::after { transform: rotate(45deg); }
+    .faq__q:focus-visible { outline: 3px solid var(--focus); outline-offset: -3px; border-radius: var(--radius); }
+    .faq__a { padding: 0 var(--space-5) var(--space-5); }
+    .faq__a p { margin: 0; }
+
+    /* Home-prep checklist */
+    .checklist { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-3); }
+    .checklist li {
+      display: flex; align-items: flex-start; gap: var(--space-3);
+      color: var(--text);
+    }
+    .checklist li::before {
+      content: "🐾"; flex: none; line-height: 1.4;
+    }
+  </style>
+</head>
+
+<body data-page="resources">
+  <!-- shared chrome injected by components.js -->
+  <header id="site-header"></header>
+
+  <main id="main">
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">For adopters &amp; fosters</p>
+        <h1>Resources &amp; Tips</h1>
+        <p>Everything you need to help a rescue dog settle in, thrive, and feel at home — from the first 72 hours to lifelong care.</p>
+      </div>
+    </section>
+
+    <!-- ===================== QUICK START GUIDE ===================== -->
+    <section class="section" id="new-dog">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">First things first</p>
+          <h2>Bringing Your New Dog Home</h2>
+          <p>Rescue dogs have often had a long journey to New York. A calm, predictable start sets everyone up for success.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card card--lift" data-reveal>
+            <div class="card__body">
+              <div class="give__icon" aria-hidden="true">🧭</div>
+              <h3 class="card__title">Go slow &amp; keep it calm</h3>
+              <p class="card__text">Skip the welcome party. Give your dog a quiet space to retreat to, and let them explore one room at a time on their own schedule.</p>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body">
+              <div class="give__icon" aria-hidden="true">⏰</div>
+              <h3 class="card__title">Build a routine</h3>
+              <p class="card__text">Predictable meals, walks, and bedtime help a nervous dog learn that they're safe. Routine is the fastest way to build trust.</p>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body">
+              <div class="give__icon" aria-hidden="true">🦮</div>
+              <h3 class="card__title">Leash &amp; ID from day one</h3>
+              <p class="card__text">Use a secure harness with tags on every outing, even in the yard. Scared dogs can bolt — your microchip is registered, so keep it updated too.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== THE 3-3-3 RULE ===================== -->
+    <section class="section section--alt" id="decompression">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">The decompression rule</p>
+          <h2>The 3-3-3 Rule</h2>
+          <p>A simple way to picture how most rescue dogs adjust. Every dog is different — let yours set the pace.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card step" data-reveal>
+            <div class="card__body">
+              <div class="step__num">3</div>
+              <h3 class="card__title">First 3 days</h3>
+              <p class="card__text">Overwhelmed and decompressing. Your dog may hide, sleep a lot, or not eat much. Keep things quiet and give them room to breathe.</p>
+            </div>
+          </article>
+          <article class="card step" data-reveal>
+            <div class="card__body">
+              <div class="step__num">3</div>
+              <h3 class="card__title">First 3 weeks</h3>
+              <p class="card__text">Settling in. They start to learn your routine, test a few boundaries, and let their real personality begin to show.</p>
+            </div>
+          </article>
+          <article class="card step" data-reveal>
+            <div class="card__body">
+              <div class="step__num">3</div>
+              <h3 class="card__title">First 3 months</h3>
+              <p class="card__text">Feeling at home. Trust is built, comfort sets in, and your dog truly understands that this is their forever family.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HOME-PREP CHECKLIST ===================== -->
+    <section class="section" id="checklist">
+      <div class="container">
+        <div class="split">
+          <div data-reveal="left">
+            <p class="eyebrow">Before pickup day</p>
+            <h2>New-Dog Home Checklist</h2>
+            <p class="lead" style="margin-block:1rem">Whether you're adopting or fostering, a little prep goes a long way. Have these ready before your dog walks through the door.</p>
+            <ul class="checklist">
+              <li>A crate or cozy bed in a quiet, low-traffic corner</li>
+              <li>Food &amp; water bowls (ask your foster what food they've been eating to avoid tummy upset)</li>
+              <li>A properly fitted harness, leash, and ID tags</li>
+              <li>Puppy pads or a potty plan for the first few days</li>
+              <li>A few simple chew toys and an enrichment puzzle</li>
+              <li>Enzyme cleaner for inevitable accidents</li>
+              <li>Baby gates to limit access while they settle</li>
+              <li>The name and number of a local vet</li>
+            </ul>
+          </div>
+          <div class="split__media" data-reveal="right">
+            <img src="assets/img/dog-5.webp" alt="A rescue dog relaxing in its new foster home">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TRAINING & VET CARE ===================== -->
+    <section class="section section--alt" id="care">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Set up for success</p>
+          <h2>Training &amp; Vet Care</h2>
+          <p>Positive habits and good health go hand in hand. These are the basics we recommend for every True North dog.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card card--lift" data-reveal>
+            <div class="card__body">
+              <div class="give__icon" aria-hidden="true">🎾</div>
+              <h3 class="card__title">Positive reinforcement</h3>
+              <p class="card__text">Reward the behavior you want with treats, praise, and play. Keep sessions short and upbeat — never punish a fearful dog.</p>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body">
+              <div class="give__icon" aria-hidden="true">👥</div>
+              <h3 class="card__title">Gentle socialization</h3>
+              <p class="card__text">Introduce new people, dogs, and sounds slowly and at a distance your dog is comfortable with. Let them choose to approach.</p>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body">
+              <div class="give__icon" aria-hidden="true">🩺</div>
+              <h3 class="card__title">Stay on top of vetting</h3>
+              <p class="card__text">Every TNR dog leaves fully vetted, microchipped, and fixed. Keep up annual checkups, vaccines, and monthly flea, tick &amp; heartworm prevention.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ACCORDION ===================== -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Good to know</p>
+          <h2>Frequently Asked Questions</h2>
+          <p>Common questions from adopters and fosters. Still stuck? We're always happy to help.</p>
+        </div>
+        <div class="faq">
+          <details class="faq__item" data-reveal open>
+            <summary class="faq__q">How does fostering work if there's no shelter?</summary>
+            <div class="faq__a">
+              <p class="card__text">True North is 100% foster-based — we have no physical shelter, so every dog we save lives in a volunteer's home. We cover approved vet costs and provide guidance; you provide the love, the couch space, and the daily care until the dog is adopted.</p>
+            </div>
+          </details>
+          <details class="faq__item" data-reveal>
+            <summary class="faq__q">What does fostering cost me?</summary>
+            <div class="faq__a">
+              <p class="card__text">True North covers veterinary care for dogs in our program. Fosters typically provide food, basic supplies, and lots of patience — but if cost is a barrier, just ask. We never want money to stop someone from saving a life.</p>
+            </div>
+          </details>
+          <details class="faq__item" data-reveal>
+            <summary class="faq__q">How long does a foster commitment last?</summary>
+            <div class="faq__a">
+              <p class="card__text">It varies by dog. Some are adopted within a couple of weeks; others need a few months to find the right match. We'll always talk through the expected timeline with you, and short-term and weekend fosters are welcome too.</p>
+            </div>
+          </details>
+          <details class="faq__item" data-reveal>
+            <summary class="faq__q">Can I foster if I already have pets or kids?</summary>
+            <div class="faq__a">
+              <p class="card__text">Absolutely — many of our best fosters do. We match dogs to your household, so tell us about your resident pets and family on your application and we'll find a good fit. Slow, supervised introductions are key.</p>
+            </div>
+          </details>
+          <details class="faq__item" data-reveal>
+            <summary class="faq__q">What's included in the adoption fee?</summary>
+            <div class="faq__a">
+              <p class="card__text">Every adoptable dog is spayed or neutered, up to date on age-appropriate vaccines, microchipped, and vet-checked before going home. Adoption fees and donations are what fund the rescue, transport, and medical care of the next dog in need.</p>
+            </div>
+          </details>
+          <details class="faq__item" data-reveal>
+            <summary class="faq__q">My new dog seems scared or won't eat. Is that normal?</summary>
+            <div class="faq__a">
+              <p class="card__text">Very often, yes — especially in the first few days (see the 3-3-3 rule above). Give them a quiet space, a steady routine, and time. If a dog won't eat or drink for more than 24–48 hours, seems ill, or anything worries you, reach out to your vet and let us know.</p>
+            </div>
+          </details>
+          <details class="faq__item" data-reveal>
+            <summary class="faq__q">Where do True North dogs come from?</summary>
+            <div class="faq__a">
+              <p class="card__text">We partner with rescues in Texas, North Carolina, and Puerto Rico, and we're proud to be the only East Coast partner for Slaughterhouse Survivors in Harbin, China, rescuing dogs from the meat trade and bringing them to loving homes in New York.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HELP CTA BAND ===================== -->
+    <section class="band band--accent">
+      <div class="container">
+        <div class="band__inner">
+          <p class="eyebrow" style="color:inherit;opacity:.85">Still have questions?</p>
+          <h2>We're here to help</h2>
+          <p style="margin-top:.75rem">Reach out any time — and if you're ready, open your home to a dog in need or start the journey to adopt.</p>
+          <div class="band__cta">
+            <button class="btn btn--primary" data-open-modal="foster">Apply to Foster</button>
+            <button class="btn btn--accent" data-open-modal="adopt">Apply to Adopt</button>
+            <button class="btn btn--ghost" data-open-modal="contact" style="color:inherit;border-color:currentColor">Ask a question</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- shared chrome injected by components.js -->
+  <footer id="site-footer"></footer>
+
+  <!-- ===================== SCRIPTS (order matters) =====================
+       1. components.js  — header/nav/footer/theme-pill + calls TNRForms.mount()
+       2. forms.js       — modal engine (mounted by components.js)
+       3. pets.js        — adoptable dogs grid
+       4. reveal.js      — scroll-reveal + counters
+       theme.js is already loaded in <head>.
+  -->
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/pets.js"></script>
+  <script src="assets/js/reveal.js"></script>
+</body>
+</html>

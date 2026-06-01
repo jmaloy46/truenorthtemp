@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="warm">
+<!--
+  True North Rescue Mission — HOME PAGE & CANONICAL REFERENCE
+  ------------------------------------------------------------
+  Other pages should COPY this file's <head>, the <header>/<footer>
+  mount points, and the <script> block at the bottom verbatim, then
+  swap the <main> contents. See CONTRACT.md for the full template.
+  No build step — plain HTML/CSS/JS for GitHub Pages.
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>True North Rescue Mission — NYC Foster-Based Dog Rescue</title>
+  <meta name="description" content="True North Rescue Mission is a fully volunteer-run, 100% foster-based dog rescue in New York City. Adopt, foster, volunteer, or donate — for the love of rescue.">
+
+  <!-- favicon: emoji via SVG data URI -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+
+  <!-- Google Fonts (per-theme stacks) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- theme.js loads first (in <head>) to set [data-theme] before paint, avoiding a flash -->
+  <script src="assets/js/theme.js"></script>
+</head>
+
+<body data-page="home">
+  <!-- shared chrome injected by components.js -->
+  <header id="site-header"></header>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="hero__bg">
+        <img src="assets/img/hero.webp" alt="" aria-hidden="true">
+      </div>
+      <div class="container">
+        <div class="hero__inner">
+          <p class="eyebrow" style="color:#fff">For the love of rescue</p>
+          <h1>Saving dogs. Changing lives. For the love of rescue.</h1>
+          <p class="lead">A fully volunteer-run, 100% foster-based dog rescue in New York City. Every dog in our care lives in a loving foster home until they find their forever family.</p>
+          <div class="hero__ctas">
+            <button class="btn btn--primary btn--lg" data-open-modal="adopt">🐾 Adopt a Dog</button>
+            <a class="btn btn--ghost btn--lg" href="adopt.html#adoptable" style="color:#fff;border-color:rgba(255,255,255,.6)">View Adoptable Dogs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STATS BAND ===================== -->
+    <section class="band stats">
+      <div class="container">
+        <div class="stats__grid">
+          <div data-reveal>
+            <div class="stat__num"><span data-count="2000" data-suffix="+">0</span></div>
+            <div class="stat__label">Dogs Saved</div>
+          </div>
+          <div data-reveal>
+            <div class="stat__num"><span data-count="120" data-suffix="+">0</span></div>
+            <div class="stat__label">Active Fosters</div>
+          </div>
+          <div data-reveal>
+            <div class="stat__num"><span data-count="9">0</span></div>
+            <div class="stat__label">Years Rescuing</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HOW ADOPTION WORKS ===================== -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Simple &amp; thoughtful</p>
+          <h2>How Adoption Works</h2>
+          <p>We don't issue blanket approvals — every application is matched to the dog. Here's the journey from hello to homecoming.</p>
+        </div>
+        <div class="grid grid--4">
+          <article class="card step" data-reveal>
+            <div class="card__body">
+              <div class="step__num">1</div>
+              <h3 class="card__title">Apply</h3>
+              <p class="card__text">Submit an application (home photos required). The more detail, the better the match.</p>
+            </div>
+          </article>
+          <article class="card step" data-reveal>
+            <div class="card__body">
+              <div class="step__num">2</div>
+              <h3 class="card__title">Meet &amp; Greet</h3>
+              <p class="card__text">If approved, we connect you with the dog's foster to schedule a meet within two weeks.</p>
+            </div>
+          </article>
+          <article class="card step" data-reveal>
+            <div class="card__body">
+              <div class="step__num">3</div>
+              <h3 class="card__title">Confirm</h3>
+              <p class="card__text">You'll have 24 hours after meeting to confirm. Then we send the adoption contract.</p>
+            </div>
+          </article>
+          <article class="card step" data-reveal>
+            <div class="card__body">
+              <div class="step__num">4</div>
+              <h3 class="card__title">Welcome Home</h3>
+              <p class="card__text">Sign the agreement, pay the fee (fully-vetted, microchipped, fixed), and coordinate pickup.</p>
+            </div>
+          </article>
+        </div>
+        <div class="text-center" style="margin-top:2rem" data-reveal>
+          <a class="btn btn--ghost" href="adopt.html">Read the full adoption guide</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURED ADOPTABLE DOGS ===================== -->
+    <section class="section section--alt" id="adoptable">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Meet the pack</p>
+          <h2>Featured Adoptable Dogs</h2>
+          <p>Each of these sweethearts is living in a foster home right now, waiting for their forever family.</p>
+        </div>
+        <!-- pets.js renders sample cards here; data-limit caps how many show -->
+        <div id="dogs-grid" data-limit="6"></div>
+        <div class="text-center" style="margin-top:2.5rem" data-reveal>
+          <a class="btn btn--primary btn--lg" href="https://www.petfinder.com/search/pets-for-adoption/us/?shelterRescue=be7ec94f-f354-492a-a3b1-d8183e158b6b" target="_blank" rel="noopener">See all our dogs on Petfinder ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MISSION TEASER ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div class="split__media" data-reveal="left">
+            <img src="assets/img/dog-7.webp" alt="A rescued dog enjoying its foster home">
+          </div>
+          <div data-reveal="right">
+            <p class="eyebrow">For the Love of Rescue</p>
+            <h2>Every dog deserves a soft place to land</h2>
+            <p class="lead" style="margin-block:1rem">True North Rescue Mission is a New York City-based, fully volunteer-run dog rescue. Our mission is simple: to save dogs in need by bringing them to New York where they can be placed into loving homes.</p>
+            <p>We partner with rescues in Texas, North Carolina, and Puerto Rico — and we're proud to be the only East Coast partner for Slaughterhouse Survivors in Harbin, China, rescuing dogs from the meat trade.</p>
+            <a class="btn btn--ghost" href="about.html" style="margin-top:1.25rem">Read our story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOSTER CTA BAND ===================== -->
+    <section class="band band--accent">
+      <div class="container">
+        <div class="band__inner band__inner--split">
+          <div data-reveal>
+            <p class="eyebrow" style="color:inherit;opacity:.85">Fostering is the heart of what we do</p>
+            <h2>Open your home. Save a life.</h2>
+            <p style="margin-top:.75rem;max-width:52ch">Because we have no physical shelter, every dog we save depends on a foster family. Whether for a weekend or until adoption, you make the next rescue possible.</p>
+            <div class="band__cta">
+              <button class="btn btn--primary" data-open-modal="foster">Apply to Foster</button>
+              <a class="btn btn--ghost" href="foster.html" style="color:inherit;border-color:currentColor">Why foster?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WAYS TO GIVE ===================== -->
+    <section class="section" id="donate">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Ways to give</p>
+          <h2>Help us save more dogs</h2>
+          <p>We're funded entirely by donations and adoption fees. Every contribution goes straight to vetting, transport, and care.</p>
+        </div>
+        <div class="give-grid">
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">💸</div>
+              <h3 class="card__title">Donate via Venmo</h3>
+              <p class="card__text">Send any amount to @TNRNYC. 100% supports our dogs.</p>
+              <a class="btn btn--primary" href="https://venmo.com/TNRNYC" target="_blank" rel="noopener" style="margin-top:1rem">Donate now</a>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">🏡</div>
+              <h3 class="card__title">Foster a Dog</h3>
+              <p class="card__text">Give a dog a safe place to land while they wait for adoption.</p>
+              <button class="btn btn--accent" data-open-modal="foster" style="margin-top:1rem">Apply to Foster</button>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">🙌</div>
+              <h3 class="card__title">Volunteer</h3>
+              <p class="card__text">Lend a hand at events, transport, and behind the scenes.</p>
+              <a class="btn btn--ghost" href="get-involved.html" style="margin-top:1rem">Get involved</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== INSTAGRAM STRIP ===================== -->
+    <section class="section section--alt" id="instagram">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Follow along</p>
+          <h2>@truenorthrescuemission</h2>
+          <p>Rescue stories, happy tails, and the latest from our community.</p>
+        </div>
+        <div class="ig-strip" data-reveal>
+          <!-- These link to real IG posts by shortcode; thumbnails use our local dog photos -->
+          <a class="ig-tile" href="https://www.instagram.com/p/DTYT4L-kTnD/" target="_blank" rel="noopener" aria-label="Instagram post"><img src="assets/img/dog-8.jpg" alt="" loading="lazy"></a>
+          <a class="ig-tile" href="https://www.instagram.com/p/DTWdguEEZ61/" target="_blank" rel="noopener" aria-label="Instagram post"><img src="assets/img/dog-9.jpg" alt="" loading="lazy"></a>
+          <a class="ig-tile" href="https://www.instagram.com/p/DTGMQB4DlVn/" target="_blank" rel="noopener" aria-label="Instagram post"><img src="assets/img/dog-10.jpg" alt="" loading="lazy"></a>
+          <a class="ig-tile" href="https://www.instagram.com/p/DS0DIX6DrPJ/" target="_blank" rel="noopener" aria-label="Instagram post"><img src="assets/img/dog-3.webp" alt="" loading="lazy"></a>
+          <a class="ig-tile" href="https://www.instagram.com/p/DSgbXVhkbr0/" target="_blank" rel="noopener" aria-label="Instagram post"><img src="assets/img/dog-5.webp" alt="" loading="lazy"></a>
+          <a class="ig-tile" href="https://www.instagram.com/p/DSQZYNPkdNG/" target="_blank" rel="noopener" aria-label="Instagram post"><img src="assets/img/event-1.jpg" alt="" loading="lazy"></a>
+        </div>
+        <div class="text-center" style="margin-top:2rem" data-reveal>
+          <a class="btn btn--ghost" href="https://www.instagram.com/truenorthrescuemission/" target="_blank" rel="noopener">Follow us on Instagram ↗</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- shared chrome injected by components.js -->
+  <footer id="site-footer"></footer>
+
+  <!-- ===================== SCRIPTS (order matters) =====================
+       1. components.js  — header/nav/footer/theme-pill + calls TNRForms.mount()
+       2. forms.js       — modal engine (mounted by components.js)
+       3. pets.js        — adoptable dogs grid
+       4. reveal.js      — scroll-reveal + counters
+       theme.js is already loaded in <head>.
+  -->
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/pets.js"></script>
+  <script src="assets/js/reveal.js"></script>
+</body>
+</html>

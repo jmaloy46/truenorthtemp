@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="warm">
+<!--
+  True North Rescue Mission — GET INVOLVED
+  ------------------------------------------------------------
+  Head, mount points, and script block copied verbatim from
+  index.html (the canonical reference). Only <title>,
+  <meta description>, data-page, and <main> differ.
+  See CONTRACT.md. No build step — plain HTML/CSS/JS.
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Involved — True North Rescue Mission</title>
+  <meta name="description" content="Adopt, foster, volunteer, donate via Venmo @TNRNYC, sponsor a dog, or follow along — every way you can help True North Rescue Mission save more dogs in New York City.">
+
+  <!-- favicon: emoji via SVG data URI -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+
+  <!-- Google Fonts (per-theme stacks) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- theme.js loads first (in <head>) to set [data-theme] before paint, avoiding a flash -->
+  <script src="assets/js/theme.js"></script>
+</head>
+
+<body data-page="involved">
+  <!-- shared chrome injected by components.js -->
+  <header id="site-header"></header>
+
+  <main id="main">
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Join our mission</p>
+        <h1>Get Involved</h1>
+        <p>Make a difference and change lives. There are so many ways to help — adopt, foster, volunteer, donate, sponsor, or simply spread the word. Every one of them helps us save another dog.</p>
+      </div>
+    </section>
+
+    <!-- ===================== WAYS TO HELP ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">For the love of rescue</p>
+          <h2>Ways to Help</h2>
+          <p>We're fully volunteer-run and 100% foster-based with no physical shelter — which means every dog we save depends on people like you.</p>
+        </div>
+        <div class="give-grid">
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">🐾</div>
+              <h3 class="card__title">Adopt</h3>
+              <p class="card__text">Bring home a new best friend. Browse our adoptable dogs, then start your application — every adoption gives a dog a second chance.</p>
+              <button class="btn btn--primary" data-open-modal="adopt" style="margin-top:1rem">Apply to Adopt</button>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">🏡</div>
+              <h3 class="card__title">Foster</h3>
+              <p class="card__text">Fostering is the heart of what we do. Open your home to a dog in need — for a weekend or until adoption — and make the next rescue possible.</p>
+              <button class="btn btn--accent" data-open-modal="foster" style="margin-top:1rem">Apply to Foster</button>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">🙌</div>
+              <h3 class="card__title">Volunteer</h3>
+              <p class="card__text">Lend a hand at adoption events, help with transport, or pitch in behind the scenes. Every set of hands moves a dog closer to home.</p>
+              <a class="btn btn--ghost" href="#" data-open-modal="contact" style="margin-top:1rem">Volunteer with us</a>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">💸</div>
+              <h3 class="card__title">Donate</h3>
+              <p class="card__text">We're funded entirely by donations and adoption fees. Send any amount via Venmo to @TNRNYC — 100% goes straight to our dogs.</p>
+              <a class="btn btn--primary" href="https://venmo.com/TNRNYC" target="_blank" rel="noopener" style="margin-top:1rem">Donate via Venmo</a>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">📣</div>
+              <h3 class="card__title">Share &amp; Follow</h3>
+              <p class="card__text">Can't adopt or donate right now? Following and sharing our posts helps dogs find homes faster. Tap follow and spread the word.</p>
+              <a class="btn btn--ghost" href="https://www.instagram.com/truenorthrescuemission/" target="_blank" rel="noopener" style="margin-top:1rem">Follow on Instagram ↗</a>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">⭐</div>
+              <h3 class="card__title">Sponsor a Dog</h3>
+              <p class="card__text">Not able to foster or adopt? Sponsor a rescue's vetting and care while they wait for a forever family. See how below.</p>
+              <a class="btn btn--ghost" href="#sponsor" style="margin-top:1rem">Learn about sponsoring</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DONATION BAND ===================== -->
+    <section class="band band--grad">
+      <div class="container">
+        <div class="band__inner">
+          <p class="eyebrow" style="color:inherit;opacity:.85">Every dollar saves a dog</p>
+          <h2>Donate to True North Rescue</h2>
+          <p style="margin-top:.75rem;max-width:54ch;margin-inline:auto">As a fully volunteer-run rescue, we have no paid staff and no shelter overhead — so your gift goes directly to vetting, transport, and care. Send any amount via Venmo to <strong>@TNRNYC</strong>.</p>
+          <div class="band__cta">
+            <a class="btn btn--primary btn--lg" href="https://venmo.com/TNRNYC" target="_blank" rel="noopener">Donate via Venmo @TNRNYC ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EVENTS ===================== -->
+    <section class="section section--alt" id="events">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Out in the community</p>
+          <h2>Events</h2>
+          <p>Adoption days, meet-and-greets, and fundraisers are where rescue comes to life. We announce every event on social first.</p>
+        </div>
+        <!-- No upcoming events scraped yet — inviting "follow us" block -->
+        <div class="split">
+          <div class="split__media" data-reveal="left">
+            <img src="assets/img/event-1.jpg" alt="True North Rescue volunteers and dogs at a community adoption event">
+          </div>
+          <div data-reveal="right">
+            <h3 style="font-family:var(--font-head)">No upcoming events on the calendar — yet</h3>
+            <p class="lead" style="margin-block:1rem">New adoption days and fundraisers pop up all the time. The fastest way to hear about them is to follow us — that's where we post dates, locations, and how to RSVP first.</p>
+            <p>Hosting a venue, planning a fundraiser, or want to partner on an event? We'd love to hear from you.</p>
+            <div class="hero__ctas" style="margin-top:1.25rem">
+              <a class="btn btn--primary" href="https://www.facebook.com/TrueNorthRescue/" target="_blank" rel="noopener">Follow us on Facebook ↗</a>
+              <a class="btn btn--ghost" href="mailto:Anthony.truenorthrescue@gmail.com">Pitch an event idea</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SPONSOR A DOG ===================== -->
+    <section class="section" id="sponsor">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Give from anywhere</p>
+          <h2>Sponsor a Dog</h2>
+          <p>Can't open your home but still want to change a life? Sponsoring covers the real costs of getting a dog from rescue to ready — and you get to follow their journey home.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card step" data-reveal>
+            <div class="card__body">
+              <div class="step__num">1</div>
+              <h3 class="card__title">Pick a pup</h3>
+              <p class="card__text">Browse our adoptable dogs on Petfinder and tell us which one tugged at your heart.</p>
+            </div>
+          </article>
+          <article class="card step" data-reveal>
+            <div class="card__body">
+              <div class="step__num">2</div>
+              <h3 class="card__title">Chip in</h3>
+              <p class="card__text">Send any amount via Venmo to @TNRNYC with the dog's name in the note. It goes straight to their vetting, transport, and care.</p>
+            </div>
+          </article>
+          <article class="card step" data-reveal>
+            <div class="card__body">
+              <div class="step__num">3</div>
+              <h3 class="card__title">Follow them home</h3>
+              <p class="card__text">We'll share updates as your sponsored dog finds their forever family — the best happy-tail ending there is.</p>
+            </div>
+          </article>
+        </div>
+        <div class="text-center" style="margin-top:2rem" data-reveal>
+          <a class="btn btn--primary btn--lg" href="https://www.petfinder.com/search/pets-for-adoption/us/?shelterRescue=be7ec94f-f354-492a-a3b1-d8183e158b6b" target="_blank" rel="noopener">Find a dog to sponsor ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOSTER CTA BAND ===================== -->
+    <section class="band band--accent">
+      <div class="container">
+        <div class="band__inner band__inner--split">
+          <div data-reveal>
+            <p class="eyebrow" style="color:inherit;opacity:.85">Fostering is the heart of what we do</p>
+            <h2>Open your home. Save a life.</h2>
+            <p style="margin-top:.75rem;max-width:52ch">Because we have no physical shelter, every dog we save depends on a foster family. Whether for a weekend or until adoption, you make the next rescue possible.</p>
+            <div class="band__cta">
+              <button class="btn btn--primary" data-open-modal="foster">Apply to Foster</button>
+              <a class="btn btn--ghost" href="foster.html" style="color:inherit;border-color:currentColor">Why foster?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- shared chrome injected by components.js -->
+  <footer id="site-footer"></footer>
+
+  <!-- ===================== SCRIPTS (order matters) =====================
+       1. components.js  — header/nav/footer/theme-pill + calls TNRForms.mount()
+       2. forms.js       — modal engine (mounted by components.js)
+       3. pets.js        — adoptable dogs grid
+       4. reveal.js      — scroll-reveal + counters
+       theme.js is already loaded in <head>.
+  -->
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/pets.js"></script>
+  <script src="assets/js/reveal.js"></script>
+</body>
+</html>

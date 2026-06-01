@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="warm">
+<!--
+  True North Rescue Mission — ADOPT PAGE
+  ------------------------------------------------------------
+  Head, header/footer mounts, and the script block are copied
+  verbatim from index.html (the canonical reference). Only the
+  <title>, <meta name="description">, data-page, and <main>
+  contents differ. See CONTRACT.md.
+  No build step — plain HTML/CSS/JS for GitHub Pages.
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt a Dog — True North Rescue Mission</title>
+  <meta name="description" content="How to adopt a rescue dog through True North Rescue Mission: browse adoptable dogs, learn our application process, fees, requirements, out-of-state and puppy care policies, then start your adoption application.">
+
+  <!-- favicon: emoji via SVG data URI -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+
+  <!-- Google Fonts (per-theme stacks) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- theme.js loads first (in <head>) to set [data-theme] before paint, avoiding a flash -->
+  <script src="assets/js/theme.js"></script>
+</head>
+
+<body data-page="adopt">
+  <!-- shared chrome injected by components.js -->
+  <header id="site-header"></header>
+
+  <main id="main">
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">For the love of rescue</p>
+        <h1>Adopt a Dog</h1>
+        <p class="lead">Saving one dog will not change the world — but for that one dog, the world will change forever. Every adoption gives a rescue a second chance at a loving home in New York.</p>
+        <div class="hero__ctas" style="justify-content:center;margin-top:1.5rem">
+          <button class="btn btn--primary btn--lg" data-open-modal="adopt">🐾 Apply to Adopt</button>
+          <a class="btn btn--ghost btn--lg" href="#how-to-adopt">How adoption works</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ADOPTABLE DOGS ===================== -->
+    <section class="section" id="adoptable">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Meet the pack</p>
+          <h2>Our Adoptable Dogs</h2>
+          <p>Each of these sweethearts is living in a loving foster home right now, waiting for their forever family. See someone you love? Start an application.</p>
+        </div>
+        <!-- pets.js renders the dog cards here -->
+        <div id="dogs-grid"></div>
+        <div class="text-center" style="margin-top:2.5rem" data-reveal>
+          <a class="btn btn--primary btn--lg" href="https://www.petfinder.com/search/pets-for-adoption/us/?shelterRescue=be7ec94f-f354-492a-a3b1-d8183e158b6b" target="_blank" rel="noopener">See all our dogs on Petfinder ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HOW TO ADOPT — PROCESS STEPS ===================== -->
+    <section class="section section--alt" id="how-to-adopt">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Simple &amp; thoughtful</p>
+          <h2>How to Adopt</h2>
+          <p>We don't issue blanket approvals — every application is reviewed against the specific needs of the dog you're interested in. Here's the full journey from hello to homecoming.</p>
+        </div>
+        <div class="grid grid--4">
+          <article class="card step" data-reveal>
+            <div class="card__body">
+              <div class="step__num">1</div>
+              <h3 class="card__title">Submit Your Application</h3>
+              <p class="card__text">Tell us about your home and your hopes. Home photos are required (a short video works too). The more detail you share, the better the match.</p>
+            </div>
+          </article>
+          <article class="card step" data-reveal>
+            <div class="card__body">
+              <div class="step__num">2</div>
+              <h3 class="card__title">Review &amp; Approval</h3>
+              <p class="card__text">If approved, we'll email you to connect you with the dog's current foster so you can schedule a meet and greet within two weeks.</p>
+            </div>
+          </article>
+          <article class="card step" data-reveal>
+            <div class="card__body">
+              <div class="step__num">3</div>
+              <h3 class="card__title">Meet &amp; Confirm</h3>
+              <p class="card__text">After meeting the dog, you'll have 24 hours to confirm. If you move forward, we email you an adoption contract to sign.</p>
+            </div>
+          </article>
+          <article class="card step" data-reveal>
+            <div class="card__body">
+              <div class="step__num">4</div>
+              <h3 class="card__title">Welcome Home</h3>
+              <p class="card__text">Once the signed agreement and adoption fee are returned, you'll coordinate pick-up directly with the foster. Your new best friend comes home.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== APPLICATION DETAIL + REQUIREMENTS ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div data-reveal="left">
+            <p class="eyebrow">Step one, in detail</p>
+            <h2>What we look for in an application</h2>
+            <p class="lead" style="margin-block:1rem">We don't issue blanket approvals. If you don't have a particular dog in mind, simply note that on your application and we'll help you find your match.</p>
+            <p>Please don't apply if you're unsure, or if you aren't ready to schedule a meet and greet within two weeks of applying. Thoughtful applications help us make the right match the first time.</p>
+          </div>
+          <div data-reveal="right">
+            <article class="card">
+              <div class="card__body">
+                <h3 class="card__title">Application requirements</h3>
+                <ul class="card__text" style="padding-left:1.2em;display:grid;gap:.6rem;margin:0">
+                  <li><strong>Home photos are required</strong> for all applicants — a short video may be submitted in their place.</li>
+                  <li><strong>Detail matters.</strong> The more you tell us about your home, schedule, and other pets, the better we can match you.</li>
+                  <li><strong>Be ready to meet.</strong> Only apply if you can schedule a meet and greet within two weeks.</li>
+                  <li><strong>24-hour confirmation</strong> after meeting — otherwise we schedule meets with other interested applicants.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEES POLICY ===================== -->
+    <section class="section section--alt" id="fees">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Transparent &amp; fair</p>
+          <h2>Adoption Fees</h2>
+          <p>We're funded entirely by donations and adoption fees. Every dollar goes straight back into vetting, transport, and care for the next dog in need.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">💉</div>
+              <h3 class="card__title">Fully Vetted</h3>
+              <p class="card__text">Every dog goes home up to date on vaccinations, spayed or neutered, and microchipped.</p>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">🤝</div>
+              <h3 class="card__title">Fee Covers Care</h3>
+              <p class="card__text">Your adoption fee helps offset the medical care and transport that brought your dog to New York.</p>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">❤️</div>
+              <h3 class="card__title">Straight to the Dogs</h3>
+              <p class="card__text">As a volunteer-run rescue, 100% of fees and donations support our dogs — never salaries.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== OUT-OF-STATE + PUPPY CARE ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Good to know</p>
+          <h2>Policies &amp; special cases</h2>
+          <p>A few important notes before you apply, so there are no surprises along the way.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3 class="card__title">🐶 Puppy care (under 12 weeks)</h3>
+              <p class="card__text">Puppies under 12 weeks require a care plan with your application. Young puppies shouldn't be left alone longer than 2–3 hours at a time, so please tell us how you plan to care for one day to day.</p>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3 class="card__title">🗺️ Out-of-state adopters</h3>
+              <p class="card__text">We're a New York City rescue and prioritize placements within our region. Out-of-state applications are considered case by case — reach out before applying so we can talk through travel and the home-check details.</p>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3 class="card__title">✉️ Questions first?</h3>
+              <p class="card__text">Not sure if you're ready, or have a question about a specific dog? Email our adoption team at <a href="mailto:Adopt.TrueNorthRescue@gmail.com">Adopt.TrueNorthRescue@gmail.com</a> and we'll help.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== START APPLICATION BAND ===================== -->
+    <section class="band band--grad">
+      <div class="container">
+        <div class="band__inner">
+          <p class="eyebrow" style="color:inherit;opacity:.85">Ready when you are</p>
+          <h2>Start Your Adoption Application</h2>
+          <p style="margin-top:.75rem;max-width:52ch;margin-inline:auto">It only takes a few minutes — and it's the first step toward changing a dog's world forever.</p>
+          <div class="band__cta">
+            <button class="btn btn--primary btn--lg" data-open-modal="adopt">🐾 Start Your Adoption Application</button>
+            <a class="btn btn--ghost btn--lg" href="https://www.petfinder.com/search/pets-for-adoption/us/?shelterRescue=be7ec94f-f354-492a-a3b1-d8183e158b6b" target="_blank" rel="noopener" style="color:inherit;border-color:currentColor">Browse on Petfinder ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- shared chrome injected by components.js -->
+  <footer id="site-footer"></footer>
+
+  <!-- ===================== SCRIPTS (order matters) =====================
+       1. components.js  — header/nav/footer/theme-pill + calls TNRForms.mount()
+       2. forms.js       — modal engine (mounted by components.js)
+       3. pets.js        — adoptable dogs grid
+       4. reveal.js      — scroll-reveal + counters
+       theme.js is already loaded in <head>.
+  -->
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/pets.js"></script>
+  <script src="assets/js/reveal.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="warm">
+<!--
+  True North Rescue Mission — OUR MISSION / ABOUT PAGE
+  ----------------------------------------------------
+  Head, header/footer mounts, and the <script> block are copied
+  verbatim from index.html (the canonical reference). Only the
+  <title>, <meta name="description">, data-page, and <main> change.
+  See CONTRACT.md.
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Mission — True North Rescue Mission</title>
+  <meta name="description" content="Learn the story of True North Rescue Mission: a NYC, volunteer-run, 100% foster-based dog rescue saving dogs since 2017 — and our rescue partners in Texas, North Carolina, Puerto Rico, and Harbin, China.">
+
+  <!-- favicon: emoji via SVG data URI -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+
+  <!-- Google Fonts (per-theme stacks) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- theme.js loads first (in <head>) to set [data-theme] before paint, avoiding a flash -->
+  <script src="assets/js/theme.js"></script>
+</head>
+
+<body data-page="about">
+  <!-- shared chrome injected by components.js -->
+  <header id="site-header"></header>
+
+  <main id="main">
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">For the love of rescue</p>
+        <h1>Our Mission</h1>
+        <p class="lead">To save dogs in need by bringing them to New York where they can be placed into loving homes.</p>
+      </div>
+    </section>
+
+    <!-- ===================== MISSION STATEMENT ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div class="split__media" data-reveal="left">
+            <img src="assets/img/dog-2.webp" alt="A rescued dog settled into a loving foster home">
+          </div>
+          <div data-reveal="right">
+            <p class="eyebrow">Who we are</p>
+            <h2>A volunteer-run, foster-based rescue</h2>
+            <p class="lead" style="margin-block:1rem">True North Rescue Mission is a New York City-based, fully volunteer-run dog rescue. Our mission is simple: to save dogs in need by bringing them to New York where they can be placed into loving homes.</p>
+            <p>We are entirely foster-based, with no physical shelter. Every dog in our care lives in a loving foster home until they find their forever family. We're funded entirely by public donations and adoption fees — and we value diversity in every part of what we do.</p>
+            <div class="hero__ctas" style="margin-top:1.5rem">
+              <button class="btn btn--primary" data-open-modal="adopt">🐾 Apply to Adopt</button>
+              <button class="btn btn--accent" data-open-modal="foster">Apply to Foster</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== IMPACT STATS ===================== -->
+    <section class="band stats">
+      <div class="container">
+        <div class="stats__grid">
+          <div data-reveal>
+            <div class="stat__num"><span data-count="2000" data-suffix="+">0</span></div>
+            <div class="stat__label">Dogs Saved</div>
+          </div>
+          <div data-reveal>
+            <div class="stat__num"><span data-count="120" data-suffix="+">0</span></div>
+            <div class="stat__label">Active Fosters</div>
+          </div>
+          <div data-reveal>
+            <div class="stat__num"><span data-count="9">0</span></div>
+            <div class="stat__label">Years Rescuing</div>
+          </div>
+          <div data-reveal>
+            <div class="stat__num"><span data-count="4">0</span></div>
+            <div class="stat__label">Rescue Partners</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== OUR STORY / HISTORY ===================== -->
+    <section class="section section--alt" id="our-story">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Our history</p>
+          <h2>How True North began</h2>
+          <p>What started as a small group of volunteers determined to give dogs a second chance has grown into a network of fosters, adopters, and supporters working together across the country and around the world.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card step" data-reveal>
+            <div class="card__body">
+              <div class="step__num">2017</div>
+              <h3 class="card__title">Where it started</h3>
+              <p class="card__text">True North began rescuing dogs in 2017, operating under another organization's umbrella — a handful of volunteers determined to give dogs a second chance.</p>
+            </div>
+          </article>
+          <article class="card step" data-reveal>
+            <div class="card__body">
+              <div class="step__num">2021</div>
+              <h3 class="card__title">Becoming True North</h3>
+              <p class="card__text">In 2021 we registered as a corporation under our current name, True North Rescue Mission, and set out to grow our foster and adopter community.</p>
+            </div>
+          </article>
+          <article class="card step" data-reveal>
+            <div class="card__body">
+              <div class="step__num">501(c)(3)</div>
+              <h3 class="card__title">Today &amp; beyond</h3>
+              <p class="card__text">We are a 501(c)(3) non-profit organization (status pending), still 100% volunteer-run and foster-based — with no physical shelter to this day.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RESCUE PARTNERS ===================== -->
+    <section class="section" id="partners">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Across the country &amp; beyond</p>
+          <h2>Our Rescue Partners</h2>
+          <p>We partner with rescues and shelters near and far to bring dogs in need to New York — and into loving homes.</p>
+        </div>
+        <div class="grid grid--4">
+          <article class="card card--lift" data-reveal>
+            <div class="card__body">
+              <div class="give__icon" aria-hidden="true">🤠</div>
+              <h3 class="card__title">Texas</h3>
+              <p class="card__text">Pulling at-risk dogs from overcrowded shelters and transporting them north to safety.</p>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body">
+              <div class="give__icon" aria-hidden="true">🌲</div>
+              <h3 class="card__title">North Carolina</h3>
+              <p class="card__text">Working with regional partners to give Southern shelter dogs a second chance in New York.</p>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body">
+              <div class="give__icon" aria-hidden="true">🏝️</div>
+              <h3 class="card__title">Puerto Rico</h3>
+              <p class="card__text">Helping the island's stray and surrendered dogs — known as "satos" — find forever families.</p>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body">
+              <div class="give__icon" aria-hidden="true">🐾</div>
+              <h3 class="card__title">Slaughterhouse Survivors</h3>
+              <p class="card__text">Based in Harbin, China, we're proud to be their only East Coast partner — rescuing dogs from the meat trade and giving them a chance at a safe, loving life.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOSTER CTA BAND ===================== -->
+    <section class="band band--accent">
+      <div class="container">
+        <div class="band__inner band__inner--split">
+          <div data-reveal>
+            <p class="eyebrow" style="color:inherit;opacity:.85">Fostering is the heart of what we do</p>
+            <h2>Open your home. Save a life.</h2>
+            <p style="margin-top:.75rem;max-width:52ch">Because we have no physical shelter, every dog we save depends on a foster family. Whether for a weekend or until adoption, you make the next rescue possible.</p>
+            <div class="band__cta">
+              <button class="btn btn--primary" data-open-modal="foster">Apply to Foster</button>
+              <a class="btn btn--ghost" href="foster.html" style="color:inherit;border-color:currentColor">Why foster?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WAYS TO HELP ===================== -->
+    <section class="section" id="help">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Join the mission</p>
+          <h2>Every dog deserves a soft place to land</h2>
+          <p>Saving one dog will not change the world — but for that one dog, the world changes forever. Here's how you can be part of it.</p>
+        </div>
+        <div class="give-grid">
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">🐶</div>
+              <h3 class="card__title">Adopt a Dog</h3>
+              <p class="card__text">Give a rescued dog their forever home and start your own happy tail.</p>
+              <button class="btn btn--primary" data-open-modal="adopt" style="margin-top:1rem">Apply to Adopt</button>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">🏡</div>
+              <h3 class="card__title">Foster a Dog</h3>
+              <p class="card__text">Give a dog a safe place to land while they wait for their family.</p>
+              <button class="btn btn--accent" data-open-modal="foster" style="margin-top:1rem">Apply to Foster</button>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">💸</div>
+              <h3 class="card__title">Donate via Venmo</h3>
+              <p class="card__text">Send any amount to @TNRNYC. 100% supports our dogs.</p>
+              <a class="btn btn--ghost" href="https://venmo.com/TNRNYC" target="_blank" rel="noopener" style="margin-top:1rem">Donate now ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- shared chrome injected by components.js -->
+  <footer id="site-footer"></footer>
+
+  <!-- ===================== SCRIPTS (order matters) =====================
+       1. components.js  — header/nav/footer/theme-pill + calls TNRForms.mount()
+       2. forms.js       — modal engine (mounted by components.js)
+       3. pets.js        — adoptable dogs grid
+       4. reveal.js      — scroll-reveal + counters
+       theme.js is already loaded in <head>.
+  -->
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/pets.js"></script>
+  <script src="assets/js/reveal.js"></script>
+</body>
+</html>

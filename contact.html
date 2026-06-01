@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="warm">
+<!--
+  True North Rescue Mission — CONTACT PAGE
+  ----------------------------------------
+  Head, header/footer mounts, and the <script> block are copied
+  verbatim from index.html (the canonical reference). Only <title>,
+  <meta name="description">, data-page, and <main> differ.
+  See CONTRACT.md for the full template.
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — True North Rescue Mission</title>
+  <meta name="description" content="Get in touch with True North Rescue Mission — a volunteer-run, 100% foster-based NYC dog rescue. Email us about adoptions, fostering, partnerships, or events, follow along on social, or send us a message.">
+
+  <!-- favicon: emoji via SVG data URI -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+
+  <!-- Google Fonts (per-theme stacks) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- theme.js loads first (in <head>) to set [data-theme] before paint, avoiding a flash -->
+  <script src="assets/js/theme.js"></script>
+</head>
+
+<body data-page="contact">
+  <!-- shared chrome injected by components.js -->
+  <header id="site-header"></header>
+
+  <main id="main">
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">We'd love to hear from you</p>
+        <h1>Contact Us</h1>
+        <p>We're a volunteer-run, 100% foster-based rescue with no physical shelter — so email is the best way to reach us. Pick the inbox that fits, and a real person will get back to you.</p>
+      </div>
+    </section>
+
+    <!-- ===================== EMAIL CONTACT CARDS ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Email the right inbox</p>
+          <h2>Reach the team directly</h2>
+          <p>Sending to the right address helps us route your message faster. Not sure where it fits? Start with General and we'll point you the right way.</p>
+        </div>
+        <div class="give-grid">
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">📬</div>
+              <h3 class="card__title">General</h3>
+              <p class="card__text">Questions, hellos, and anything that doesn't fit the inboxes below.</p>
+              <a class="btn btn--primary" href="mailto:TrueNorthRescue@gmail.com" style="margin-top:1rem">TrueNorthRescue@gmail.com</a>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">🏡</div>
+              <h3 class="card__title">Fosters</h3>
+              <p class="card__text">Foster applications, foster support, and questions about opening your home.</p>
+              <a class="btn btn--primary" href="mailto:Fosters.TrueNorthRescue@gmail.com" style="margin-top:1rem">Fosters.TrueNorthRescue@gmail.com</a>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">🐾</div>
+              <h3 class="card__title">Adoptions</h3>
+              <p class="card__text">Adoption applications, dog availability, and meet-and-greet coordination.</p>
+              <a class="btn btn--primary" href="mailto:Adopt.TrueNorthRescue@gmail.com" style="margin-top:1rem">Adopt.TrueNorthRescue@gmail.com</a>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">🤝</div>
+              <h3 class="card__title">Partnerships &amp; Events</h3>
+              <p class="card__text">Collaborations, sponsorships, fundraisers, and event opportunities.</p>
+              <a class="btn btn--primary" href="mailto:Anthony.truenorthrescue@gmail.com" style="margin-top:1rem">Anthony.truenorthrescue@gmail.com</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SEND A MESSAGE BAND ===================== -->
+    <section class="band band--accent">
+      <div class="container">
+        <div class="band__inner">
+          <p class="eyebrow" style="color:inherit;opacity:.85">Prefer not to open your email app?</p>
+          <h2>Send us a message</h2>
+          <p style="margin-top:.75rem;max-width:52ch;margin-inline:auto">Fill out a quick form and it lands straight in our inbox. We read every message — thank you for reaching out.</p>
+          <div class="band__cta">
+            <button class="btn btn--primary" data-open-modal="contact">✉️ Send us a message</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONNECT (SOCIAL + DONATE) ===================== -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Stay connected</p>
+          <h2>Follow along &amp; chip in</h2>
+          <p>See our rescue stories and happy tails, then help us bring the next dog home.</p>
+        </div>
+        <div class="give-grid">
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">📘</div>
+              <h3 class="card__title">Facebook</h3>
+              <p class="card__text">Follow @truenorthrescuemission for updates and adoptable dogs.</p>
+              <a class="btn btn--ghost" href="https://www.facebook.com/TrueNorthRescue/" target="_blank" rel="noopener" style="margin-top:1rem">Visit Facebook ↗</a>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">📸</div>
+              <h3 class="card__title">Instagram</h3>
+              <p class="card__text">Daily rescue moments at @truenorthrescuemission.</p>
+              <a class="btn btn--ghost" href="https://www.instagram.com/truenorthrescuemission/" target="_blank" rel="noopener" style="margin-top:1rem">Visit Instagram ↗</a>
+            </div>
+          </article>
+          <article class="card card--lift" data-reveal>
+            <div class="card__body text-center">
+              <div class="give__icon" aria-hidden="true">💸</div>
+              <h3 class="card__title">Donate via Venmo</h3>
+              <p class="card__text">Send any amount to @TNRNYC. 100% supports our dogs.</p>
+              <a class="btn btn--primary" href="https://venmo.com/TNRNYC" target="_blank" rel="noopener" style="margin-top:1rem">Donate now</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HOW WE WORK NOTE ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">A quick note</p>
+          <h2>No phone line, no front door — and that's by design</h2>
+          <p>True North Rescue Mission has no public phone number or physical address. We're entirely volunteer-run and 100% foster-based: every dog lives in a loving foster home, not a shelter. Email lets our volunteers respond thoughtfully around their day jobs and the dogs in their care.</p>
+        </div>
+        <div class="text-center" style="margin-top:1rem" data-reveal>
+          <button class="btn btn--accent btn--lg" data-open-modal="contact">✉️ Send us a message</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- shared chrome injected by components.js -->
+  <footer id="site-footer"></footer>
+
+  <!-- ===================== SCRIPTS (order matters) =====================
+       1. components.js  — header/nav/footer/theme-pill + calls TNRForms.mount()
+       2. forms.js       — modal engine (mounted by components.js)
+       3. pets.js        — adoptable dogs grid
+       4. reveal.js      — scroll-reveal + counters
+       theme.js is already loaded in <head>.
+  -->
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/pets.js"></script>
+  <script src="assets/js/reveal.js"></script>
+</body>
+</html>
