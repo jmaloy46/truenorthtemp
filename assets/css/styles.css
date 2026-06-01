@@ -26,8 +26,10 @@
 /* ============================= 1. RESET ============================= */
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; }
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
-body { line-height: 1.6; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; overflow-x: clip; }
+/* clip sideways overflow (off-canvas mobile menu + reveal transforms) so the page
+   only scrolls vertically on phones; `clip` keeps position:sticky working unlike `hidden` */
+body { line-height: 1.6; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; overflow-x: clip; }
 img, picture, svg, video { display: block; max-width: 100%; }
 input, button, textarea, select { font: inherit; color: inherit; }
 button { cursor: pointer; background: none; border: none; }
